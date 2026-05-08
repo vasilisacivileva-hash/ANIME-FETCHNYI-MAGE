@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+
+
+body {
+    font-family:Oswald, serif;
+   background: linear-gradient(90deg, #429eff 1%, #f96cda 90%);
+}
+
+p {
+    color: rgb(253, 253, 253);
+}
+
+.nav-link {
+    color: rgb(255, 255, 255);
+}
+
+.navbar-nav .nav-link.active {
+ color: rgb(33, 154, 252);   
+}
+
+.navbar-brand img {
+    width: 50px;
+}
+
+.navbar-toggler {
+    background-color: rgb(41, 177, 246);
+}
+
+.sidebar {
+color: rgb(248, 255, 248);
+    background: linear-gradient(270deg, #429eff 1%, #f96cda 35%);
+}
+
+.card-img-top {
+ width: 100%; 
+    max-height: 150px; 
+    object-fit: cover; 
+}
+
+.slide-item {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.product-image { 
+    width: 300px !important; 
+     height: 300px !important; 
+     overflow: hidden !important; 
+      position: relative !important;
+     } 
+     .custom-img { 
+        display: block !important; 
+        width: 100% !important; 
+        height: 100% !important; 
+        object-fit: cover !important; 
+         object-position: center !important; 
+         } 
+       
+
+.btn-primary {
+    background-color: #1242ff !important; 
+    border-color: #193ffd !important; 
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    color: white !important;
+    background-color: #070066 !important; /* Темно-зеленый цвет при наведении */
+    border-color: #090175 !important;
+}
+
+.card {
+    background: linear-gradient(270deg, #429eff 1%, #f96cda 90%);
+     color: aliceblue;
+}
+
+.slide-text,
+.footer-text {
+    color: aliceblue;
+    margin: auto auto;
+}
+
+footer {
+   background: linear-gradient(270deg, #429eff 1%, #f96cda 90%);
+}
+
+.media-links {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.call-anim {
+   animation: myAnim 2s ease 1s infinite normal forwards;
+}
+
+
+/* Базовые стили для слайдера */
+#carouselExample {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Стили для изображения пользователя */
+.user-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 20px;
+    display: block;
+}
+
+/* Блок с отзывом */
+.testimonial__block {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Имя пользователя */
+.name {
+    margin: 15px 0 10px;
+    font-size: 1.25rem;
+    color: #333;
+}
+
+/* Рейтинг */
+.rating {
+    font-size: 1.2rem;
+    color: #ffc107; /* Цвет звезд */
+}
+
+/* Текст отзыва */
+.testimonial__paragraph {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 600px) {
+    .user-photo {
+        width: 80px;
+        height: 80px;
+    }
+
+    .testimonial__block {
+        padding: 15px;
+    }
+
+    .name {
+        font-size: 1.1rem;
+    }
+
+    .testimonial__paragraph {
+        font-size: 0.95rem;
+    }
+}
+
+@keyframes myAnim {
+ 0%,
+ 100% {
+ transform: rotate(0deg);
+ transform-origin: 50% 100%;
+ }
+
+ 10% {
+ transform: rotate(2deg);
+ }
+
+ 20%,
+ 40%,
+ 60% {
+ transform: rotate(-4deg);
+ }
+
+ 30%,
+ 50%,
+ 70% {
+ transform: rotate(4deg);
+ }
+
+ 80% {
+ transform: rotate(-2deg);
+ }
+
+ 90% {
+ transform: rotate(2deg);
+ }
+}
+
+@media (max-width: 767px) {
+  .card-img-top {
+    height: auto !important;
+  }
+  .card-title {
+    font-size: 1rem;
+  }
+  .carousel-indicators {
+    display: none;
+  }
+
+@media (min-width: 768px) and (max-width: 991px) {
+ 
+}
+
